@@ -1,0 +1,3 @@
+services:
+  video-screen:
+    gpus: all

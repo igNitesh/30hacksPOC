@@ -1,0 +1,16 @@
+services:
+  video-screen:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: family-safe-video-checker:latest
+    environment:
+      INPUT_VIDEO: /app/input/video.mp4
+      OUTPUT_REPORT: /app/output/report.json
+    volumes:
+      - ./input:/app/input:ro
+      - ./output:/app/output
+    command:
+      - /app/input/video.mp4
+      - --output
+      - /app/output/report.json

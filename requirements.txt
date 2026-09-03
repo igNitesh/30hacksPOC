@@ -1,0 +1,4 @@
+# Install the CUDA-enabled ONNX Runtime build when an NVIDIA driver is available.
+opencv-python>=4.10
+nudenet>=3.4.2
+onnxruntime-gpu>=1.18
